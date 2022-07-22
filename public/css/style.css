@@ -16,7 +16,7 @@
     color: #ffffff;
     font-family: 'Righteous', cursive;
 }
-.initbutton{
+.initial div{
     width: 246px;
     height: 54px;
 
@@ -35,4 +35,196 @@
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
     color: #D70900;
+}
+.questions{
+    height: 667px;
+    width: 375px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FB6B6B;
+}
+.questions img{
+    height: 60px;
+    width: 52;
+}
+.questions p{
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'Righteous', cursive;
+}
+.questions .initbutton{
+    width: 300px;
+    height: 65px;
+
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 25px;
+
+}
+.toplogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 240px;
+}
+.questionbox div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.questionbox p{
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Recursive', sans-serif;
+    color: #333333;
+}
+.questionbox ion-icon{
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    transform: rotateZ(90deg);
+    color: #333333;
+}
+.barraProgresso{
+    height: 70px;
+    width: 100%;
+    background-color: #ffff;
+    margin-bottom: -36px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.barraProgresso p{
+    font-family: 'Recursive', sans-serif;
+    height: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 30px;
+}
+.barraProgresso div{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconesprogesso ion-icon{
+    width: 23px;
+    height: 23px;
+    margin-bottom: 20px;
+}
+.State01{
+    position: relative;
+    border-radius: 5px;
+    background-color: #FFFFD4;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 25px;
+    width: 299px;
+    height: 131px;
+}
+.State01 p{
+    position: absolute;
+    left: 3px;
+    top: 6px;
+}
+.State01 img{
+    bottom: 6px;
+    right: 15px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+}
+.State02{
+    position: relative;
+    border-radius: 5px;
+    background-color: #FFFFD4;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 25px;
+    width: 299px;
+    height: 131px;
+}
+.State02 p{
+    position: absolute;
+    left: 3px;
+    top: 6px;
+}
+.State02 img{
+    bottom: 6px;
+    right: 15px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+}
+.BoxButtons{
+    position: relative;
+    top: 40px;
+    left: 6px;
+}
+.BoxButtons div{
+    width: 85px;
+    height: 38px;
+    margin-left: 8px;
+    border-radius: 5px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NLembrei{
+    background-color: #FF3030;
+}
+.PorPouco{
+    background-color: #FF922E;
+}
+.Zap{
+    background-color: #2FBE34;
+}
+
+.State03{
+    width: 300px;
+    height: 65px;
+
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 25px;
+}
+.negative p{
+    color:#FF3030;
+    text-decoration: line-through;
+}
+.negative ion-icon{
+    color:#FF3030;
+}
+.Positive p{
+    color:#2FBE34;
+    text-decoration: line-through;
+}
+.Positive ion-icon{
+    transform: rotateZ(0deg);
+    color: #2FBE34;
+}
+.Warning p{
+    color:#FF922E;
+    text-decoration: line-through;
+}
+.Warning ion-icon{
+    transform: rotateZ(0deg);
+    color: #FF922E;
 }
