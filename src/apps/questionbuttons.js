@@ -3,6 +3,7 @@ import React from "react";
 function Render({QuestionsArr}){
     const [cardState, SetCardstate] = React.useState("initbutton");
     const [cardAnswer, SetCardAnswer] = React.useState(QuestionsArr.resultState);
+    const [resultState, SetResultState] = React.useState({});
     if(cardState === "State01"){
         return(
             <div class={cardState} onClick={() => SetCardstate("State02")}><p>{QuestionsArr.question}</p><img src="/assets/setinha.png" alt="seta"/></div>
@@ -11,22 +12,29 @@ function Render({QuestionsArr}){
     if(cardState === "State02"){
         return( <div class={cardState}><p>{QuestionsArr.answer}</p>
         <div class="BoxButtons">
-          <div class="NLembrei" onClick={() => {SetCardAnswer("negative")
-                                                SetCardstate("State03")
-                                                }
-                                                }>Não Lembrei</div>
-          <div class="PorPouco" onClick={() => {SetCardAnswer("Warning")
-                                                SetCardstate("State03")
-                                                }
-                                                }>Quase não <br/>lembrei</div>
-          <div class="Zap" onClick={() =>      {SetCardAnswer("Positive")
-                                                SetCardstate("State03")
-                                                }
-                                                }>     Zap!</div>
-        </div> </div>);
+            <div class="NLembrei" onClick={() => {SetCardAnswer("negative")
+                                                  SetResultState({...resultState, tipo:"close-circle"})
+                                                  SetCardstate("State03")
+                                                  RenderIcons(resultState)
+                                                 }
+                                                 }>Não Lembrei</div>
+            <div class="PorPouco" onClick={() => {SetCardAnswer("Warning")
+                                                  SetResultState({...resultState, tipo:"help-circle"})
+                                                  SetCardstate("State03")
+                                                  RenderIcons(resultState)
+                                                 }
+                                                 }>Quase não <br/>lembrei</div>
+            <div class="Zap" onClick={() =>      {SetCardAnswer("Positive")
+                                                  SetResultState({...resultState, tipo:"checkmark-circle"})
+                                                  SetCardstate("State03")
+                                                  RenderIcons(resultState)
+                                                 }
+                                                 }>     Zap!</div>
+            </div> 
+        </div>);
     }
     if(cardState === "State03"){
-        return(<div class={cardState +" "+ cardAnswer}><p>{QuestionsArr.tittle}</p><ion-icon name="close-circle"></ion-icon></div>);
+        return(<div class={cardState +" "+ cardAnswer}><p>{QuestionsArr.tittle}</p><ion-icon name={resultState.tipo}></ion-icon></div>);
     }
     if(cardState === "initbutton"){
         return(
@@ -35,20 +43,9 @@ function Render({QuestionsArr}){
     }
 
 }
-function RenderIcons(tipo, {resultState, SetResultState}){
-    const NewIcons = [...resultState, tipo];
-    SetResultState(NewIcons);
-    console.log("carvalho");
-    return(
-        <div className="barraProgresso">
-            <p> 0/4  CONCLUIDOS</p>
-        <div class="iconesprogesso">
-        {resultState.map(() => 
-            console.log("carvalho")
-            )}
-        </div>
-        </div>
-    );
+function RenderIcons(lista){
+    console.log(lista)
+    return("");
 }
 
 export default function QuestionBox(){
@@ -79,9 +76,6 @@ export default function QuestionBox(){
          resultState: "none"
         }
     ]
-    const [resultState, SetResultState] = React.useState([
-        {tipo: "close-circle"}
-    ]);
     
     return(
         <React.Fragment>
@@ -90,9 +84,10 @@ export default function QuestionBox(){
             <Render
             QuestionsArr = {QuestionsArr}
             /> 
-            )}</div>
-        
- 
+            )}
+            </div>
+            <RenderIcons 
+            />
         </React.Fragment>);
 
 }
