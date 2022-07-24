@@ -94,7 +94,7 @@
 .barraProgresso{
     height: 70px;
     width: 100%;
-    background-color: #ffff;
+    background-color: rgb(180, 180, 180);
     margin-bottom: -36px;
     position: absolute;
     bottom: 0px;

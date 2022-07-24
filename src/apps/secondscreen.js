@@ -10,9 +10,6 @@ export default function RenderSecondScreen(){
             <p>ZapRecall</p>
           </div>
           <QuestionBox />
-          <div className="barraProgresso">
-            <p> 0/4  CONCLUIDOS</p>
-          </div>
         </div>
     );
 }
