@@ -1,3 +1,4 @@
+import "./logostyle.css";
 export default function RenderSecondLogo(){
     return(
         <div className="toplogo">

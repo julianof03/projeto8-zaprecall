@@ -2,6 +2,7 @@ import React from 'react';
 import QuestionBox from './questionbuttons';
 import RenderIcons from "./Rendericons";
 import RenderFinalScreen from './finalscreen';
+import "./Finalscreen.css";
 import RenderSecondLogo from './LogoScreen2';
 
 const QuestionsArr = [

@@ -10,8 +10,11 @@
 .initial img{
     width: 136px;
     height: 161px;
+    margin-top: -100px;
+    margin-bottom: 20px;
 }
 .initial p{
+    margin-bottom: 15px;
     font-size: 36px;
     color: #ffffff;
     font-family: 'Righteous', cursive;
@@ -26,15 +29,14 @@
     border-color: #D70900;
     background-color: #ffffff;
 
-
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .initial div p{
-    color: #D70900;
-}
-.initbutton p{
+    margin-top: 20px;
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
+    color: #D70900;
 }
