@@ -1,0 +1,40 @@
+.initial{
+    height: 667px;
+    width: 375px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FB6B6B;
+}
+.initial img{
+    width: 136px;
+    height: 161px;
+}
+.initial p{
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'Righteous', cursive;
+}
+.initial div{
+    width: 246px;
+    height: 54px;
+
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D70900;
+    background-color: #ffffff;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.initial div p{
+    color: #D70900;
+}
+.initbutton p{
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+}

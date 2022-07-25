@@ -1,0 +1,26 @@
+.barrafinal{
+    height: 85px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barrafinal img{
+    width: 23px;
+    margin-top: 16px;
+    margin-right: 10px;
+    height: 23px;
+}
+.barrafinal div{
+    display: flex;
+    margin-top: -10px;
+    height: 35px;
+}
+.barrafinal p{
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    color: #333333;
+}

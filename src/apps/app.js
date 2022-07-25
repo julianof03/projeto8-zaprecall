@@ -1,6 +1,7 @@
 import RenderFirstScreen from './Intialscreen';
 import RenderSecondScreen from './secondscreen';
 import React from 'react';
+import "./app.css";
 export default function App(){
     const [screennum, SetScrennnum] = React.useState([0]);
 

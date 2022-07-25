@@ -1,10 +1,7 @@
 
 export default function RenderIcons({
-    footState,
-    num,
-    SetFootState })
+    footState})
 {
-
     return(    
         <ion-icon name={footState}></ion-icon> 
     );

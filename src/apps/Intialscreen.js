@@ -1,5 +1,6 @@
 import React from 'react';
 import FirstButton from './initbutton';
+import "./initialscreen.css"
         
 export default function RenderFirstScreen({SetScrennnum, screennum}){
 
